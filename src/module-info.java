@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author lucho
+ *
+ */
+module JavaArgPrograma {
+}

@@ -22,6 +22,8 @@ public class Compras {
 		mostrarItems(itemC, carro, c1);
 		
 		
+		
+		
 	}
 	
 	public static void mostrarItems(ItemCarrito vector[], Carrito carro, Cliente c1) {
@@ -35,6 +37,16 @@ public class Compras {
 		
 		carro.mostrarMontoTotal(total);
 		
+		//aplicamos descuento fijo
+		Descuento desc1 = new DescuentoFijo();
+		desc1.asignarDescuento(250.8);
+		System.out.println("El monto total con el descuento asignado es: $" + desc1.valorFinal(total));
+	
+		//aplicamos descuento porcentual
+		Descuento desc2 = new DescuentoPorcentaje();
+		desc2.asignarDescuento(0.15);
+		System.out.println("El monto total con el porcentaje de descuento asignado es: $" + desc2.valorFinal(total));
+	
 	}
 	
 

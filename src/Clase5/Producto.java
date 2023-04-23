@@ -1,7 +1,5 @@
 package Clase5;
 
-import java.util.HashMap;
-
 public class Producto {
 
 	private int codigo;

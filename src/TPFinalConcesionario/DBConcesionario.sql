@@ -59,7 +59,6 @@ CREATE TABLE TRANSACCIONES
 );
 
 /*select * from vehiculos;*/
-/*delete from vehiculos where id_vehiculo = 1;*/
 insert into vehiculos (id_vehiculo, marca, modelo, tipo, precio, disponible, cant_puertas, combustible)
 values (id_vehiculo, 'Volkswagen', 'CrossFox', 'Auto', 2000000, 1, 5, 'Nafta');
 insert into vehiculos (id_vehiculo, marca, modelo, tipo, precio, disponible, cant_puertas, combustible)
@@ -72,17 +71,14 @@ insert into vehiculos (id_vehiculo, marca, modelo, tipo, precio, disponible, tip
 values (id_vehiculo, 'Peugeot', 'Partner', 'Utilitario', 3100000, 1, 'Mudanzas', 2);
 
 /*select * from clientes;*/
-/*delete from clientes where id_cliente = 2;*/
 insert into clientes values (id_cliente, 11222333, 'Lionel', 'Messi', '3511231212');
 insert into clientes values (id_cliente, 33111222, 'Samuel', 'de Luque', 'samuel@gmail.com');
 
 /*select * from vendedores;*/
-/*delete from vendedores where id_vendedor = 1;*/
 insert into vendedores values (id_vendedor, 113826, 'Luciano', 'Manzanelli');
 insert into vendedores values (id_vendedor, 254879, 'Guillermo', 'Diaz');
 
-/*SELECT * FROM TRANSACCIONES;*/
-/*delete from transacciones where id_transaccion = 1;*/
+/*select * from transacciones;*/
 insert into transacciones (id_transaccion, id_cliente, id_vendedor, id_vehiculo, fecha, tipo)
 values (id_transaccion, 1, 1, 1, '2023-05-06', 'Venta');
 insert into transacciones (id_transaccion, id_cliente, id_vendedor, id_vehiculo, fecha, tipo)
